@@ -1,4 +1,4 @@
-/* ─── App Layout ──────────────────────────────────────────────────────────── */
+/* App Layout */
 
 .app-root {
   display: flex;
@@ -8,7 +8,7 @@
   background: var(--bg-base);
 }
 
-/* ─── Header ──────────────────────────────────────────────────────────────── */
+/* Header */
 
 .app-header {
   display: flex;
@@ -83,7 +83,7 @@
   50% { opacity: 0.4; }
 }
 
-/* ─── Main Body ───────────────────────────────────────────────────────────── */
+/* Main Body */
 
 .app-body {
   display: flex;
@@ -115,7 +115,7 @@
   overflow: hidden;
 }
 
-/* ─── Bottom Area ─────────────────────────────────────────────────────────── */
+/* Bottom Area */
 
 .app-bottom {
   display: flex;
@@ -136,7 +136,7 @@
   width: 480px;
 }
 
-/* ─── Panel Base ──────────────────────────────────────────────────────────── */
+/* Panel Base */
 
 .panel {
   display: flex;
@@ -174,7 +174,7 @@
   font-family: var(--font-mono);
 }
 
-/* ─── Algorithm Selector ──────────────────────────────────────────────────── */
+/* Algorithm Selector */
 
 .algo-options {
   display: flex;
@@ -224,7 +224,7 @@
   color: var(--text-muted);
 }
 
-/* ─── Tree Input ──────────────────────────────────────────────────────────── */
+/* Tree Input */
 
 .panel--input {
   flex: 1;
@@ -280,7 +280,7 @@
   color: var(--text-muted);
 }
 
-/* ─── Buttons ─────────────────────────────────────────────────────────────── */
+/* Buttons */
 
 .btn {
   font-family: var(--font-mono);
@@ -318,7 +318,7 @@
   50% { box-shadow: 0 0 10px rgba(244, 114, 182, 0.3); }
 }
 
-/* ─── Code Panel ──────────────────────────────────────────────────────────── */
+/* Code Panel */
 
 .panel--code {
   flex: 1;
@@ -350,7 +350,7 @@
   flex-shrink: 0;
 }
 
-/* ─── Visualizer ──────────────────────────────────────────────────────────── */
+/* Visualizer */
 
 .panel--visualizer {
   flex: 1;
@@ -402,7 +402,7 @@
   color: var(--text-muted);
 }
 
-/* ─── React Flow Custom Nodes ─────────────────────────────────────────────── */
+/* React Flow Custom Nodes */
 
 .rf-node {
   width: 48px;
@@ -454,7 +454,7 @@
   height: 1px !important;
 }
 
-/* ─── Controls ────────────────────────────────────────────────────────────── */
+/* Controls */
 
 .panel--controls {
   flex-shrink: 0;
@@ -588,7 +588,7 @@
   white-space: nowrap;
 }
 
-/* ─── Output Panel ────────────────────────────────────────────────────────── */
+/* Output Panel */
 
 .panel--output {
   flex-shrink: 0;
@@ -632,7 +632,7 @@
   font-style: italic;
 }
 
-/* ─── Log Panel ───────────────────────────────────────────────────────────── */
+/* Log Panel */
 
 .panel--log {
   flex: 1;
@@ -708,7 +708,7 @@
   font-style: italic;
 }
 
-/* ─── Call Stack Panel ────────────────────────────────────────────────────── */
+/* Call Stack Panel */
 
 .panel--callstack {
   flex: 1;
@@ -776,7 +776,7 @@
   font-style: italic;
 }
 
-/* ─── Built-in Code Editor ────────────────────────────────────────────────── */
+/* Built-in Code Editor */
 
 .code-editor {
   flex: 1;
