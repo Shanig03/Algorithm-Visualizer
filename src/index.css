@@ -1,0 +1,68 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-base: #080c14;
+  --bg-panel: #0e1520;
+  --bg-panel-2: #131c2b;
+  --bg-panel-3: #1a2438;
+  --border: #1f2e44;
+  --border-active: #2a3f5f;
+
+  --text-primary: #e8f0fe;
+  --text-secondary: #7a90b0;
+  --text-muted: #3d5070;
+
+  --accent-pink: #f472b6;
+  --accent-pink-dim: rgba(244, 114, 182, 0.15);
+  --accent-pink-glow: rgba(244, 114, 182, 0.35);
+
+  --accent-cyan: #22d3ee;
+  --accent-cyan-dim: rgba(34, 211, 238, 0.15);
+
+  --node-visited: #10b981;
+  --node-visited-dim: rgba(16, 185, 129, 0.2);
+  --node-active: #f472b6;
+  --node-default: #1e2d42;
+
+  --font-display: 'Syne', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+
+  --shadow-panel: 0 4px 24px rgba(0, 0, 0, 0.4);
+  --shadow-glow-pink: 0 0 20px rgba(244, 114, 182, 0.25);
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: var(--font-mono);
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  font-size: 13px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: var(--border-active); }
+
+/* React Flow overrides */
+.react-flow__background { background: var(--bg-panel) !important; }
+.react-flow__controls { background: var(--bg-panel-2) !important; border: 1px solid var(--border) !important; border-radius: var(--radius-md) !important; }
+.react-flow__controls button { background: transparent !important; border-bottom: 1px solid var(--border) !important; color: var(--text-secondary) !important; fill: var(--text-secondary) !important; }
+.react-flow__controls button:hover { background: var(--bg-panel-3) !important; }
+.react-flow__minimap { background: var(--bg-panel-2) !important; border: 1px solid var(--border) !important; border-radius: var(--radius-md) !important; }
