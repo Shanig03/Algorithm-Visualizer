@@ -30,11 +30,6 @@ This project helps you understand how recursive traversals work by showing:
 
 ## Getting Started
 
-### Prerequisites
-
-- **Node.js 18+** (recommended)
-- npm (comes with Node.js)
-
 ### Installation
 
 ```bash
