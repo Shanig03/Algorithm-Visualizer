@@ -82,21 +82,6 @@ Each non-null node should contain:
 - `npm run build` — create production build in `dist/`
 - `npm run preview` — preview the production build locally
 
-## Project Structure
-
-```text
-src/
-  algorithms/
-    treeTraversal.js      # Step generation for inorder/preorder/postorder
-  components/             # UI panels (controls, code, logs, call stack, etc.)
-  utils/
-    treeParser.js         # Tree JSON validation/parsing
-    treeLayout.js         # Tree layout helpers
-    stepPlayer.js         # Derives current visual state from traversal steps
-  styles/
-    app.css               # Main app styles
-```
-
 ## Why this project is useful
 
 This visualizer is designed for students and interview prep learners who want to **build strong recursion intuition**. Instead of only showing final traversal output, it exposes the intermediate execution state so you can track *how* each algorithm progresses.
