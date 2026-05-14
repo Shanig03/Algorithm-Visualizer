@@ -28,12 +28,6 @@ This project helps you understand how recursive traversals work by showing:
   - Execution log
   - Recursive call stack panel
 
-## Tech Stack
-
-- [React 18](https://react.dev/)
-- [Vite 5](https://vitejs.dev/)
-- [React Flow](https://reactflow.dev/)
-
 ## Getting Started
 
 ### Prerequisites
