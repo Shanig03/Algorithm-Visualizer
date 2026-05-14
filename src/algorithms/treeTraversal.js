@@ -1,7 +1,7 @@
 /**
  * Algorithm simulation layer.
  * Generates an array of step objects for binary tree traversal algorithms.
- * Does NOT animate directly — just builds step data.
+ * Does NOT animate directly - just builds step data.
  */
 
 // Line numbers in the displayed code (1-indexed)
@@ -21,7 +21,7 @@ function buildStep(type, nodeId, message, output, callStack, activeLine, extra =
   };
 }
 
-// ─── Inorder ──────────────────────────────────────────────────────────────────
+// Inorder 
 
 export function generateInorderSteps(root) {
   const steps = [];
@@ -68,8 +68,7 @@ export function generateInorderSteps(root) {
   return steps;
 }
 
-// ─── Preorder ─────────────────────────────────────────────────────────────────
-
+// Preorder 
 export function generatePreorderSteps(root) {
   const steps = [];
   const output = [];
@@ -115,7 +114,7 @@ export function generatePreorderSteps(root) {
   return steps;
 }
 
-// ─── Postorder ────────────────────────────────────────────────────────────────
+// Postorder 
 
 export function generatePostorderSteps(root) {
   const steps = [];
@@ -162,7 +161,7 @@ export function generatePostorderSteps(root) {
   return steps;
 }
 
-// ─── Dispatcher ───────────────────────────────────────────────────────────────
+// Dispatcher 
 
 export function generateSteps(tree, algorithm) {
   if (!tree) return [];
