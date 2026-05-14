@@ -44,8 +44,6 @@ npm run dev
 
 Then open the local URL printed by Vite (usually `http://localhost:5173`).
 
-```
-
 ## Tree Input Format
 
 The app expects a JSON object representing a binary tree.
