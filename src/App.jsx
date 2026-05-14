@@ -17,13 +17,13 @@ import { deriveStateFromSteps, SPEED_MAP } from './utils/stepPlayer.js';
 import { DEFAULT_TREE_JSON } from './utils/sampleTrees.js';
 
 export default function App() {
-  // ── Input state ──────────────────────────────────────────────────────────
+  // Input state 
   const [treeJson, setTreeJson] = useState(DEFAULT_TREE_JSON);
   const [parsedTree, setParsedTree] = useState(null);
   const [parseError, setParseError] = useState(null);
   const [selectedAlgorithm, setSelectedAlgorithm] = useState('inorder');
 
-  // ── Playback state ────────────────────────────────────────────────────────
+  // Playback state 
   const [steps, setSteps] = useState([]);
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -31,7 +31,7 @@ export default function App() {
 
   const intervalRef = useRef(null);
 
-  // ── Parse + generate steps when tree or algorithm changes ─────────────────
+  // Parse + generate steps when tree or algorithm changes 
   useEffect(() => {
     const { tree, error } = parseTree(treeJson);
     if (error) {
@@ -55,7 +55,7 @@ export default function App() {
     setIsPlaying(false);
   }, [parsedTree, selectedAlgorithm]);
 
-  // ── Auto-play interval ────────────────────────────────────────────────────
+  // Auto-play interval
   useEffect(() => {
     if (isPlaying) {
       intervalRef.current = setInterval(() => {
@@ -73,7 +73,7 @@ export default function App() {
     return () => clearInterval(intervalRef.current);
   }, [isPlaying, speed, steps.length]);
 
-  // ── Control handlers ──────────────────────────────────────────────────────
+  // Control handlers
   const handlePlay = useCallback(() => {
     if (currentStepIndex >= steps.length - 1) {
       setCurrentStepIndex(0);
@@ -112,7 +112,7 @@ export default function App() {
     setIsPlaying(false);
   }, []);
 
-  // ── Derive current visualization state ───────────────────────────────────
+  // Derive current visualization state
   const {
     activeNodeId,
     visitedNodeIds,
