@@ -44,16 +44,6 @@ npm run dev
 
 Then open the local URL printed by Vite (usually `http://localhost:5173`).
 
-### Production Build
-
-```bash
-npm run build
-```
-
-### Preview Production Build
-
-```bash
-npm run preview
 ```
 
 ## Tree Input Format
